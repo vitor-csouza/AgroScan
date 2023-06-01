@@ -12,7 +12,9 @@ class ImageScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
+      appBar: AppBar(
+        title: const Text('AgroScan'),
+        centerTitle: true,),
       body: ListView.builder(
         itemCount: plantations.length,
         itemBuilder: (context, index) {
